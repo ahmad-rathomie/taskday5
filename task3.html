@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String</title>
+</head>
+
+<body>
+    <style>
+        input{
+            width: 20%;
+            box-sizing: border-box;
+            margin: 8px;
+        }
+        button{
+            cursor: pointer;
+            background-color: yellow;
+            margin: auto;
+        }
+     
+    </style>
+    <center>
+    <div>
+        <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Insert Character</h1>
+        <input type="text" id="textbox">
+        <button  onclick="reverseString()" >Click</button><br>
+        <p id="demo"></p>
+        <!-- <p>Result :<span id="rev"></span></p> -->
+
+    </div></center>
+
+
+
+    <script>
+        // Function to reverse string
+        // program to reverse a string
+
+        function reverseString() {
+            var letter = document.getElementById("textbox").value; 
+            // reverse string function
+            var reverse =letter.split("").reverse().join("") 
+            document.getElementById("demo").innerHTML= reverse;
+
+
+        }
+    //    result for the reverse output
+
+        document.getElementById("btnsubmit").addEventListener("click",reverseString);
+
+     
+
+       
+        
+       
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
